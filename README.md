@@ -14,6 +14,17 @@
 
 ### Instalando dependências
 
+#### Linux
+
+É possível criar o virtualenv e instalar as dependências utilizando o comando make, basta executar o comando abaixo:
+
+```
+$ make setup
+$ source venv/bin/activate
+```
+
+#### Windows
+
 É importante que você crie uma virtualenv para o projeto, para evitar complicações com libs externas. Para isso, crie uma virtualenv e ative.
 
 ```
