@@ -2,10 +2,14 @@
 
 ## Índice
 
-- [Rodando o projeto][Rodando o projeto]
-  - [Pré-requisitos][Pré-requisitos]
-- [API][API]
-  - Health Check
+- [Rodando o projeto](rodando-o-projeto)
+  - [Pré-requisitos](pré-requisitos)
+  - [Instalando dependências](instalando-dependências)
+    - [Linux](linux)
+    - [Windows](windows)
+  - [Rodando o projeto](rodando-o-projeto-1)
+- [API](api)
+  - [Health Check](get-apihealthcheck)
 
 ## Rodando o projeto
 
