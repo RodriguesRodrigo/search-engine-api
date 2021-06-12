@@ -5,6 +5,7 @@ help:
 	@echo "Usage: make COMMAND"
 	@echo ""
 	@echo "Commands:"
+	@echo "  clean			Clean all dependencies from pip and others"
 	@echo "  help			List all commands"
 	@echo "  install		Install all dependencies from the project"
 	@echo "  run			Start the application"
@@ -39,3 +40,16 @@ setup:
 
 run:
 	python application.py
+
+clean:
+	@find ./ -name '*.pyc' -exec rm -f {} \;
+	@find ./ -name 'Thumbs.db' -exec rm -f {} \;
+	@find ./ -name '*~' -exec rm -f {} \;
+	rm -rf .cache
+	rm -rf build
+	rm -rf dist
+	rm -rf *.egg-info
+	rm -rf htmlcov
+	rm -rf .tox/
+	rm -rf docs/_build
+	pip install -e . --upgrade --no-cache
