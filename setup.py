@@ -18,6 +18,11 @@ if CURRENT_PYTHON_VERSION < __required_python_version__:
     )
     sys.exit(1)
 
+
+def read(filename):
+    return [req.strip() for req in open(filename).readlines()]
+
+
 setup(
 	name = 'search-engine-api',
 	version = __version__,
@@ -28,14 +33,8 @@ setup(
 	long_description = __long_description__,
 	license = 'MIT',
 	packages = find_packages(),
-    install_requires=[
-        "click==8.0.1",
-        "Flask==2.0.1",
-        "itsdangerous==2.0.1",
-        "Jinja2==3.0.1",
-        "MarkupSafe==2.0.1",
-        "Werkzeug==2.0.1"
-    ],
+    install_requires = read('requirements.txt'),
+    extras_require = {'dev': read('requirements-dev.txt')},
 	url = 'https://github.com/RodriguesRodrigo/search-engine-api',
 	keywords = 'Python, Flask, API',
 	include_package_data = True,
