@@ -29,6 +29,7 @@ Com sua virtualenv instalada e ativada, podemos instalar as dependências com o 
 
 ```
 $ pip install -r requirements.txt
+$ pip install -r requirements-dev.txt
 ```
 
 ### Rodando o projeto
@@ -64,9 +65,8 @@ Caso você não consiga ou não queira utilizar os comandos make, é possível i
 
 ```
 # Instalando todas as dependências
-$ pip install -r requirements.txt
-$ pip install -r requirements-dev.txt
 $ pip install -e .
+$ pip install -e .["dev"]
 
 # Rodando os testes
 $ pytest
