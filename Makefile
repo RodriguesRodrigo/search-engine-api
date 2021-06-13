@@ -22,9 +22,8 @@ virtualenv:
 	@echo "# To exit from virtualenv just run 'deactivate'"
 
 install:
-	pip install -r requirements.txt; \
-	pip install -r requirements-dev.txt; \
 	pip install -e .; \
+	pip install -e .["dev"]; \
 
 setup:
 	@echo "# Creating virtualenv and installing all dependencies"
@@ -33,9 +32,9 @@ setup:
 	python -m venv venv; \
 	. venv/bin/activate; \
 	pip install --upgrade pip; \
-	pip install -r requirements.txt; \
-	pip install -r requirements-dev.txt; \
 	pip install -e .; \
+	pip install -e .["dev"]; \
+	pre-commit install; \
 
 	@echo ""
 	@echo "# IMPORTANT!"
