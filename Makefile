@@ -34,6 +34,7 @@ setup:
 	pip install --upgrade pip; \
 	pip install -e .; \
 	pip install -e .["dev"]; \
+	pre-commit install; \
 
 	@echo ""
 	@echo "# IMPORTANT!"
