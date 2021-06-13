@@ -10,6 +10,7 @@ help:
 	@echo "  install		Install all dependencies from the project"
 	@echo "  run			Start the application"
 	@echo "  setup			Run virtualenv and install Commands"
+	@echo "  test			Run tests with coverage"
 	@echo "  virtualenv		Create virtualenv to install dependencies"
 
 virtualenv:
@@ -55,3 +56,6 @@ clean:
 	rm -rf .tox/
 	rm -rf docs/_build
 	pip install -e . --upgrade --no-cache
+
+test:
+	pytest tests/ -v --cov=application
