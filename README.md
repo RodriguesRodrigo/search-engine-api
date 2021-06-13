@@ -1,16 +1,5 @@
 # Search Engine by Name
 
-## Índice
-
-- [Rodando o projeto](rodando-o-projeto)
-  - [Pré-requisitos](pré-requisitos)
-  - [Instalando dependências](instalando-dependências)
-    - [Linux](linux)
-    - [Windows](windows)
-  - [Rodando o projeto](rodando-o-projeto-1)
-- [API](api)
-  - [Health Check](get-apihealthcheck)
-
 ## Rodando o projeto
 
 ### Pré-requisitos
