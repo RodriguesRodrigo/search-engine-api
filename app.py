@@ -7,9 +7,4 @@ if __name__ == "__main__":
     port = app.config.get("APP_PORT", 5000)
     debug = app.config.get("DEBUG", False)
 
-    app.run(
-        host=ip,
-        debug=debug,
-        port=port,
-        use_reloader=debug
-    )
+    app.run(host=ip, debug=debug, port=port, use_reloader=debug)
