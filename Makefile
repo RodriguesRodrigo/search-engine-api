@@ -42,7 +42,7 @@ setup:
 	@echo "# Please start your virtualenv with 'source venv/bin/activate' to run the project."
 
 run:
-	python application.py
+	python app.py
 
 clean:
 	@find ./ -name '*.pyc' -exec rm -f {} \;

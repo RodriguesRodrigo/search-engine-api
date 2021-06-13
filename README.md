@@ -36,7 +36,7 @@ $ pip install -r requirements.txt
 Instalada as dependências, basta você rodar o comando abaixo para que o projeto esteja rodando na porta `5000`:
 
 ```
-$ python application.py
+$ python app.py
 ```
 
 Você pode testar por linha de comando:
